@@ -1,3 +1,7 @@
+function challengeBanner(num){
+  console.log('######### Challenge '+ num + ' #########');
+}
+challengeBanner(1);
 function challenge1(){
   let num = 1;
   while (num <= 5){
@@ -6,6 +10,7 @@ function challenge1(){
   }
 }
 
+challengeBanner(2);
 function challenge2(mx){
   let num = 1;
   while (num <= mx){
@@ -14,6 +19,7 @@ function challenge2(mx){
   }
 }
 
+challengeBanner(3);
 function challenge3(mn, mx){
   let num = mn;
   while (num <= mx){
@@ -22,19 +28,20 @@ function challenge3(mn, mx){
     }
 }
 
+challengeBanner(4);
 function challenge4(mx){
   let num = 1;
   let r = num % 2;
   let oae = '';
   if (r = 1){oae =' Odd';}
   else{oae = ' Even';}
-  let num = 1;
   while (num <= mx){
     console.log(num + oae);
     num = num+ 1;
     }
 }
 
+challengeBanner(5);
 function challenge5(mx){
   let num = 1;
   let r = nun % 2;
@@ -44,6 +51,7 @@ function challenge5(mx){
   }
 }
 
+challengeBanner(6);
 function challenge6(){
   let num = 10;
   while (num > 0){
@@ -52,6 +60,7 @@ function challenge6(){
   }
 }
 
+challengeBanner(7);
 function challenge7(){
   let num = 10;
   while (num > 0){
@@ -61,6 +70,7 @@ function challenge7(){
   console.log('Blast off!')
 } 
 
+challengeBanner(8);
 function challenge8(mx){
   let num = mx;
   while (num > 1){
@@ -69,6 +79,7 @@ function challenge8(mx){
   }
 }
 
+challengeBanner(9);
 function challenge9(){
   let num = 7;
   while (num > 0){
@@ -77,6 +88,8 @@ function challenge9(){
   }
 }
 
+
+challengeBanner(10);
 function challenge10(str){
   let num = 7;
   while (num > 0){
@@ -85,6 +98,7 @@ function challenge10(str){
     }
 }
 
+challengeBanner(11);
 function challenge11(str,mx){
   let num = mx;
   while (num > 0){
@@ -93,6 +107,7 @@ function challenge11(str,mx){
     }
 }
 
+challengeBanner(12);
 function challenge12(str){
   let mx = str.length();
   let num = 0;
@@ -102,6 +117,7 @@ function challenge12(str){
   }
 }
 
+challengeBanner(13);
 function challenge13(str){
   let mx = str.length();
   let num = 1;
@@ -111,6 +127,7 @@ function challenge13(str){
   }
 }
 
+challengeBanner(14);
 function challenge14(str){
   let mx = str.length();
   let num = mx;
@@ -120,6 +137,7 @@ function challenge14(str){
   }
 }
 
+challengeBanner(15);
 function challenge15(mx){
   let num = 1;
   while (num <= mx){
@@ -132,14 +150,18 @@ function challenge15(mx){
   }
 }
 
+challengeBanner(16);
 function challenge16(mx){
   let num = 1;
-  let fib1 = 1;
   let fib0 = 0;
+  let fib1 = 1;
+  let fib2 = 0;
   while(num <= mx){
-    fib1 = fib1 + fib0;
+    fib2 = fib1 + fib0;
     console.log(fib1);
-    fib
-    num = num + 1
+    num = num + 1;
+    fib0 = fib1;
+    fib1 = fib2;
+
   }
 }
