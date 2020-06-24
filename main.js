@@ -44,9 +44,10 @@ function challenge4(mx){
 challengeBanner(5);
 function challenge5(mx){
   let num = 1;
-  let r = nun % 2;
   while (num <= mx){
-    if(r === 0){console.log(num);}
+    let r = num % 2;
+    if(r === 0){console.log(num + ' Even');}
+    if(r === 1){console.log(num + ' Odd');}
     num = num+ 1;
   }
 }
@@ -109,7 +110,7 @@ function challenge11(str,mx){
 
 challengeBanner(12);
 function challenge12(str){
-  let mx = str.length();
+  let mx = str.length;
   let num = 0;
   while (num <= mx){
     console.log(str[num]);
@@ -119,7 +120,7 @@ function challenge12(str){
 
 challengeBanner(13);
 function challenge13(str){
-  let mx = str.length();
+  let mx = str.length;
   let num = 1;
   while (num <= mx){
     console.log(str[num]);
@@ -129,7 +130,7 @@ function challenge13(str){
 
 challengeBanner(14);
 function challenge14(str){
-  let mx = str.length();
+  let mx = str.length;
   let num = mx;
   while (num >= 0){
     console.log(str[num]);
@@ -144,7 +145,7 @@ function challenge15(mx){
     let message = '';
     if((num % 3) === 0){message = message + 'Fizz';}
     if((num % 5) === 0){message = message + 'Buzz';}
-    if(message !==''){message = message + num}
+    if(message ===''){message = message + num}
     console.log(message);
     num = num + 1;
   }
