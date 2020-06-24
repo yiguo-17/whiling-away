@@ -153,14 +153,15 @@ function challenge15(mx){
 
 challengeBanner(16);
 function challenge16(mx){
-  let num = 1;
-  let fib0 = 0;
-  let fib1 = 1;
-  let fib2 = 0;
+  let num = 1;// set num as counter.
+  let fib0 = 0;// the previous number for the sequel.
+  let fib1 = 1;// the current number of the sequel.
+  let fib2 = 0;// the next number of the sequel.
   while(num <= mx){
-    fib2 = fib1 + fib0;
+    fib2 = fib1 + fib0;// calculate the next number.
     console.log(fib1);
     num = num + 1;
+//sequel number iteration.
     fib0 = fib1;
     fib1 = fib2;
 
